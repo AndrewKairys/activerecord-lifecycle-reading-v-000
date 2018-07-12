@@ -17,6 +17,6 @@ class Post < ActiveRecord::Base
   end
 
   def make_title_case
-    title = self.title.titlecase
+    self.title = self.title.titlecase
   end
 end
